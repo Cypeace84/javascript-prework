@@ -23,7 +23,7 @@ if(playerInput == '1'){
   playerMove = 'kamień';
 } else if(playerInput == '2'){
     playerMove = 'papier';
-} else if(playerInpt == '3'){
+} else if(playerInput == '3'){
     playerMove = 'nozyce';
 } else {
     playerMove = 'nieznany ruch';
