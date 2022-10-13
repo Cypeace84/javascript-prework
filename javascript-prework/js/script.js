@@ -46,7 +46,10 @@ let argPlayerMove = getMoveName(argPlayerInput);
 printMessage('Twój ruch to: ' + argPlayerMove);*/
 
 function displayResult(argComputerMove, argPlayerMove){
-    printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
+    printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);}
+
+    displayResult(argComputerMove, argPlayerMove)
+
     if( argComputerMove == 'kamień' && argPlayerMove == 'papier'){
         printMessage('Ty wygrywasz!');
     } else if (argComputerMove == 'kamień' && argPlayerMove == 'kamień'){
@@ -68,6 +71,5 @@ function displayResult(argComputerMove, argPlayerMove){
     } else {
         printMessage ('Nieznany ruch. Spróbuj jeszcze raz ! ')
     } 
-}     
 
-printMessage (displayResult);
+
