@@ -48,7 +48,7 @@ function playGame(argPlayerInput) {
         } 
     }
     displayResult(computerMove, playerMove)
-
+}
     document.getElementById('play-rock').addEventListener('click', function(){
     playGame(argPlayerInput = 1);
     }); 
@@ -58,7 +58,7 @@ function playGame(argPlayerInput) {
     document.getElementById('play-scissors').addEventListener('click', function(){
     playGame(argPlayerInput = 3);
     });
-}  
+  
  
 
 
