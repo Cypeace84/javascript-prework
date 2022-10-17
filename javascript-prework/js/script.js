@@ -12,7 +12,6 @@ function playGame(argPlayerInput) {
         return 'nieznany ruch';
         }
     }
-  
 
     let randomNumber = Math.floor(Math.random() * 3 + 1);
 
@@ -20,32 +19,9 @@ function playGame(argPlayerInput) {
 
     let computerMove = getMoveName(randomNumber);
 
-/*if(randomNumber == 1){
-  computerMove = 'kamień';
-}   else if(randomNumber == 2){
-    computerMove = 'papier';
-}   else {
-    computerMove = 'nozyce';
-}
-printMessage('Mój ruch to: ' + argComputerMove);*/
-
-    /*let argPlayerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');*/
-
     console.log('Gracz wpisał: ' + argPlayerInput);
 
     let playerMove = getMoveName(argPlayerInput);
-
-/*if(playerInput == '1'){
-  playerMove = 'kamień';
-} else if(playerInput == '2'){
-    playerMove = 'papier';
-} else if(playerInput == '3'){
-    playerMove = 'nozyce';
-} else {
-    playerMove = 'nieznany ruch';
-}
-
-printMessage('Twój ruch to: ' + argPlayerMove);*/
 
     function displayResult(computerMove, playerMove){
     printMessage('Zagrałem ' + computerMove + ', a Ty ' + playerMove);
@@ -72,15 +48,41 @@ printMessage('Twój ruch to: ' + argPlayerMove);*/
         } 
     }
     displayResult(computerMove, playerMove)
-}
-document.getElementById('play-rock').addEventListener('click', function(){
+
+    document.getElementById('play-rock').addEventListener('click', function(){
     playGame(argPlayerInput = 1);
     }); 
-document.getElementById('play-paper').addEventListener('click', function(){
+    document.getElementById('play-paper').addEventListener('click', function(){
     playGame(argPlayerInput = 2);
     }); 
-document.getElementById('play-scissors').addEventListener('click', function(){
+    document.getElementById('play-scissors').addEventListener('click', function(){
     playGame(argPlayerInput = 3);
     });
-  
+}  
  
+
+
+/*if(randomNumber == 1){
+  computerMove = 'kamień';
+}   else if(randomNumber == 2){
+    computerMove = 'papier';
+}   else {
+    computerMove = 'nozyce';
+}
+printMessage('Mój ruch to: ' + argComputerMove);*/
+
+    /*let argPlayerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');*/
+
+
+
+/*if(playerInput == '1'){
+  playerMove = 'kamień';
+} else if(playerInput == '2'){
+    playerMove = 'papier';
+} else if(playerInput == '3'){
+    playerMove = 'nozyce';
+} else {
+    playerMove = 'nieznany ruch';
+}
+
+printMessage('Twój ruch to: ' + argPlayerMove);*/    
